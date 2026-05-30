@@ -1,0 +1,132 @@
+#hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 20px;
+    position: relative;
+}
+.hero-image{
+    width: auto;
+    height: 50px;
+}
+.navigate{
+    display: flex;
+    gap: 30px;
+}
+nav a{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100px;
+}
+
+.second-image{
+    height: 102vh;
+}
+.first-box {
+    border-width: 2px;
+    border: 2px solid rgb(83, 83, 182);
+    position: absolute;
+    z-index: 10;
+    max-width: 500px;
+    padding: 40px;
+    margin-left: 355px;
+    margin-top:50px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    background: transparent;
+}
+.inbox-text{
+    color: white;
+    font-size:55px;
+    margin: -10px -10px;
+}
+.inner-buttons{
+    gap: 120px;
+} 
+.inside-button{
+    border-radius: 23px;
+    background-color: rgb(235, 235, 52);
+    color: blue;
+    height: 10dvh;
+    width: 34dvh;
+    text-align: center;
+}
+.sec-inside-button {
+    border-radius: 23px;
+    background: transparent;
+    color: yellow;
+    height: 10dvh;
+    width: 34dvh;
+    text-align: center;
+    border: 1px solid rgb(235, 235, 52);
+    font-size: 20px;
+}
+.third-image {
+    height: 55vh;
+    position: absolute;
+    z-index: 1;
+    object-fit:cover;
+    left:0;
+    top: 0;
+    width: 28%;
+}
+.to-go-top{
+    position: absolute;
+    z-index: 2;
+    padding: 55px;
+    font-size: 50px;
+    margin: -20px;
+    font-family:'Lucida Sans Unicode', Verdana, sans-serif;
+    left: 60px;
+    top: 40px;
+    margin:0;
+    padding:0;
+    line-height:1.2;
+}
+.second-image{
+    display: flex;
+    gap:0;
+}
+.third-section{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap:wrap-reverse;
+    max-width: 1200px;
+    margin: 0 -1px;
+    min-height: 55vh;
+}
+.third-text{
+    width: 50%;
+    padding: 10px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: column;
+    z-index:2;
+    font-family:Cambria, Georgia, Times, 'Times New Roman', serif;
+}
+/* This works the same as the above .second-image stylings 
+.second-image{
+    display: block;
+    margin: 0;
+    padding: 0;
+} */
+.second-image .third-text {
+    display: flex;
+    justify-content:flex-end;
+} 
+.third-text h3{
+    font-size: 18px;
+    padding: 10px 40px;
+    line-height:1.7;
+    text-align: justify;
+}
+.third-text a{
+    color: #0047ab;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 20px;
+}
+
