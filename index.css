@@ -2,10 +2,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1300px;
     margin:0 auto;
     padding: 20px;
     position: relative;
+}
+#hero-section{
+    position: sticky;
+    width:200%;
+    top:0;
+    z-index:1000;
+    background-color:white;
 }
 .hero-image{
     width: auto;
@@ -36,6 +43,9 @@ nav a{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 10px;
     background: transparent;
+}
+.first-box h3{
+    color:white;
 }
 .inbox-text{
     color: white;
@@ -113,7 +123,7 @@ nav a{
     margin: 0;
     padding: 0;
 } */
-.second-image .third-text {
+.second-image, .third-text {
     display: flex;
     justify-content:flex-end;
 } 
@@ -144,89 +154,199 @@ nav a{
     align-items:stretch;
     font-size: 20px;
     font-family:'Franklin Gothic Medium', Arial, sans-serif;
-    height: 100px;
+    height: 140px;
     margin: auto 40px;
+    padding-left: 170px;
+    padding-right:170px;
 }
 .statistics{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-image: url('images/equations\ statistics\ section.png')
 }
 .first-stat {
-    border: 1px solid black;
     border-width: 2px;
     height: 300px;
     width: 400px;
 }
-.first-stat h2{
+/* .first-stat h2{
     padding: 50px;
     text-align: center;
-}
+} */
 .first-stat p{
     margin: -40px;
     padding-left: 90px;
     font-family:'Segoe UI', 'Franklin Gothic Medium',Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    font-weight: 500;
 }
 .second-stat{
-    border: 1px solid black;
     border-width: 2px;
     height: 300px;
     width: 400px;
 }
-.second-stat h2{
+/* .second-stat h2{
     padding: 50px;
     text-align: center;
-}
+} */
 .second-stat p{
     margin: -40px;
     padding-left: 10px;
     font-family:'Segoe UI', 'Franklin Gothic Medium',Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     display:block;
+    color: whitesmoke;
+    font-weight: 500;
 }
 .third-stat{
-    border: 1px solid black;
     border-width: 2px;
     height: 300px;
     width: 400px;
 }
-.third-stat h2{
+/* .third-stat h2{
     padding: 50px;
     text-align: center;
-}
+} */
 .third-stat p{
     margin: -40px;
     padding-left: 20px;
     font-family:'Segoe UI', 'Franklin Gothic Medium',Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    
+    color: whitesmoke;
+    font-weight: 500;
 }
-.third-stat .second-stat .first-stat{
+.third-stat h2, .second-stat h2, .first-stat h2{
     display: block;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:50px;
+    padding: 50px;
+    margin-top: 8px;
+    text-align: center;
+    color: rgba(12, 3, 54, 0.966);
 }
 .grouped-buttons{
-    width: 60%;
+    width: 35%;
     gap:20px;
     display: flex;
     flex-direction:column;
     justify-content: center;
     height: 70vh;
-    padding-right: 20px;
+    padding-right: 100px;
+}
+.firGrBut:hover,
+ .secGrBut:hover{
+    background-color: darkblue;
+    color: white;
 }
 .fourth-section{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     max-width: 1070px;
     margin: 0 auto;
     padding: 40px 20px;
 }
-.firGrBut .secGrBut{
-    text-align:left;
-    padding:0;
+.firGrBut, .secGrBut{
+    text-align:center;
+    padding-right:20px;
     font-size: 20px;
     border: none;
+    height:7vh;
 }
 .history-made{
-    padding: 150px;
+    padding: 40px;
+    background-color: darkblue;
+    width: 40%;
+    font-size: 20px;
+    color: whitesmoke;
+    font-family:'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.mission-accomp{
+    width: 40%;
+    background-color: white;
+    color: black;
+    padding: 40px;
+    font-size: 20px;
+    border: 1px solid white;
+    height: 58vh;
+    font-family:'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.mission-accomp:hover {
+    background-color: darkblue;
+    cursor: pointer;
+    color: whitesmoke;
+}
+.timer-icon, .hand-heart{
+    margin-bottom: 15px;
+    display: block;
+}
+.timer-icon {
+    width: 30px;
+}
+.seventh-column{
+    display: flex;
+    justify-content: center;
+    gap:0;
+    margin-bottom:90px;
+    height:104vh;
+}
+.bachelor-column{
+    background-color:rgb(57, 146, 57);
+    color: white;
+    font-size:18px;
+    padding:20px;
+    font-family:'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.masters-column{
+    background-color:rgb(233, 185, 27);
+    color: black;
+    padding:20px;
+    font-size:18px;
+    font-family:'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.professional-column{
+    background-color:rgb(43, 43, 218);
+    color: white;
+    padding:20px;
+    font-size:18px;
+    font-family:'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.professional-column, .masters-column, .bachelor-column a{
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+.sports{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sports-pic{
+    width:520px;
+    height:690px;
+    padding-right: 260px;
+    border-radius: 20px;
+}
+.sports-content{
+    width: 900%;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    gap: 20px;
+    margin-left: -160px;
+    padding-right: 40px;
+}
+.sports-content h2{
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.kepler-button{
+    height: 10vh;
+    width: 270px;
+    font-size: 20px;
+    color: white;
+    background-color: darkblue;
+    border:none;
 }
